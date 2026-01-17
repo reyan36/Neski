@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-neskiBeige: #f7f5eb;
+  --color-neskiGreen: #1a4d2e;
+  --color-neskiLightGreen: #4f772d;
+  --color-neskiBlack: #121212;
+  --color-neskiAccent: #d4c9a8;
+}
+
+/* --- CUSTOM SCROLLBAR STYLING --- */
+
+/* 1. Set the width */
+::-webkit-scrollbar {
+  width: 8px;              /* Width of vertical scrollbar */
+  height: 8px;             /* Height of horizontal scrollbar */
+}
+
+/* 2. The Track (Background) - Make it transparent or subtle */
+::-webkit-scrollbar-track {
+  background: transparent; 
+  margin-block: 4px;       /* Little space at top and bottom */
+}
+
+/* 3. The Thumb (The moving part) */
+::-webkit-scrollbar-thumb {
+  background-color:  #353535;    /* Light Gray (Slate-300) */
+  border-radius: 5px;          /* Makes it round */
+  border: 2px solid transparent; /* Creates a "padding" effect */
+  background-clip: content-box;  /* Ensures border works as padding */
+}
+
+/* 4. Hover State - Make it darker when grabbing */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1d1d1d;    /* Darker Gray (Slate-400) */
+}
+
+/* 5. Firefox Support (Firefox uses different syntax) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #353535 transparent;
+}
+
+/* --- LANDING PAGE STYLES --- */
+html {
+    scroll-behavior: smooth;
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blob-1 {
+    animation: float 7s infinite ease-in-out;
+    background: radial-gradient(circle, rgba(26, 77, 46, 0.2) 0%, rgba(26, 77, 46, 0) 70%);
+}
+
+.blob-2 {
+    animation: float 10s infinite ease-in-out reverse;
+    background: radial-gradient(circle, rgba(79, 119, 45, 0.15) 0%, rgba(79, 119, 45, 0) 70%);
+}
+
+.bg-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+}
+
+.map-container {
+    box-shadow: 20px 20px 0px #1A4D2E;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        box-shadow: 10px 10px 0px #1A4D2E;
+    }
+}

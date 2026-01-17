@@ -1,0 +1,43 @@
+Things to Install:
+
+    You need to install the following packages:
+
+        Leaflet (for maps)
+
+        SolidJS
+
+        Supabase
+
+Commands:
+
+    npm install solid-js @solidjs/router @supabase/supabase-js
+    npm install leaflet
+
+
+Things Added:
+
+    Refactored the entire dashboard.
+
+    Fixed the user photo upload issue.
+
+        A storage bucket was created in Supabase to handle profile photos.
+
+    Added a reviews system.
+
+    Added and fixed the search functionality.
+
+    Added an option for users to update their phone number.
+
+
+Things to Be Added:
+
+    AI summary feature is not implemented yet.
+
+    Other AI features that were discussed on Discord still need to be added.
+
+
+Remarks:
+
+    The project was tested on my end.
+
+    Please test it on your side as well.

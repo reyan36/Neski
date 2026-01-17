@@ -1,0 +1,12 @@
+It is ready to deploy re verify stylkes and text Also check google ai studio lst chat to check it
+
+
+Add reviews Done
+add forget password link Done 
+add 2 options as free and what user is requesting and offering Done
+add autorefresh Done for messages and services
+
+The 3-Step Checklist for Later:
+Hide the AI Key: Delete the Google Key from your HTML and put it inside a secure Vercel API Route (Method 1).
+Lock the Database: Go to Supabase and enable RLS Policies so users can only edit/delete their own posts (right now, anyone could technically delete anything).
+Clean GitHub: Make sure you never upload the file with the hardcoded keys to a public GitHub repository.
