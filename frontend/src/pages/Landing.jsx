@@ -272,7 +272,7 @@ export default function Landing() {
                 </h2>
                 <div class="relative z-10 flex flex-col sm:flex-row justify-center gap-4">
                     <button class="px-8 py-3 bg-neskiBeige text-neskiGreen rounded-full font-bold hover:bg-white transition-all shadow-md">
-                        <a href="https://linkedin.com/in/reyan36/" target="_blank">Github</a>
+                        <a href="https://github.com/reyan36/Neski" target="_blank">Github</a>
                     </button>
                 </div>
             </div>
