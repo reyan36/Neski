@@ -94,7 +94,7 @@ export default function AddServiceModal(props) {
 
     setAiLoading(true);
     try {
-        const res = await fetch('http://localhost:3000/api/generate-description', {
+        const res = await fetch('https://neski.onrender.com/api/generate-description', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 

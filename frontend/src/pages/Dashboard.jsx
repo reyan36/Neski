@@ -71,7 +71,7 @@ export default function Dashboard() {
 
     try {
         // Ensure backend is running via Docker or locally on port 3000
-        const res = await fetch('http://localhost:3000/api/recommendations', {
+        const res = await fetch('https://neski.onrender.com/api/recommendations', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ userId: currentUser().id })
